@@ -3,10 +3,10 @@ RECIPE MANAGER
 This is a personal and learning project made by me with the help of freeCodeCamp's Flask introduction. You can find it here: https://youtu.be/Z1RJmh_OqeA?si=I2Tuh06Pm2Ke2CEq
 
 ## Features
-- 1.Add Recipes: Users can add new recipes with a title, ingredients, and instructions.
--  2.View Recipes: Display a list of saved recipes with their details.
--  3.Edit Recipes: Users can update existing recipes.
--  4.Delete Recipes: Users can delete recipes they no longer want. 
+- 1. Add Recipes: Users can add new recipes with a title, ingredients, and instructions.
+- 2. View Recipes: Display a list of saved recipes with their details.
+- 3. Edit Recipes: Users can update existing recipes.
+- 4. Delete Recipes: Users can delete recipes they no longer want. 
 
 ## Installation
 To set up this project on your local machine, follow these steps:
