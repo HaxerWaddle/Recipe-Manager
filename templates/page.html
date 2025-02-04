@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='js/height_dynamic.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Your recipes</h1>
+    <form class="Form" action="/" method="post">
+        <input type="text" name="content" id="content" placeholder="Enter recipe">
+        <input type="submit" value="Add recipe">
+    </form>
+    {% if recipes|length < 1 %}
+    <h2>No recipes yet!</h2>
+    {% else %}
+
+    {% for recipe in recipes %}
+        <div class="recipe_listing">
+            <p class="Recipe" name="recipe_name">{{ recipe.content }}</p>
+            <button class="content_container" >&#8226 &#8226 &#8226</button>
+            <div class="choice_listing">
+                <a class="option" href="/details/{{ recipe.content }}/{{ recipe.id }}">Details</a>
+                <a class="option" href="/delete/{{recipe.id}}">Delete</a>
+            </div>
+        </div>
+    {% endfor %}
+    {% endif %}
+    
+    
+</div>
+
+{% endblock %}

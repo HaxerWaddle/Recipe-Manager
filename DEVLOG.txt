@@ -1,0 +1,87 @@
+DEVLOG - Recipe Book Web Application (Flask)
+
+Features:
+  1.Add Recipes: Users can add new recipes with a title, ingredients, and instructions.
+  2.View Recipes: Display a list of saved recipes with their details.
+  3.Edit Recipes: Users can update existing recipes.
+  4.Delete Recipes: Users can delete recipes they no longer want. 
+
+- Structure: #LAST UPDATED: FEB 04 2025
+    /Recipe Manager
+      |-- static
+          |-- css
+              |-- design.css
+              |-- description_design.css
+              |-- background.jpg
+          |-- js
+              |-- script.js
+              |-- height_dynamic.js
+
+      |-- templates
+          |-- base.html
+          |-- page.html
+          |-- detail-edit.html
+          |-- detail.html
+      |-- manager.py
+
+Day 1
+Date: Jan 31, 2025
+
+  Tasks Done:
+- Set up Flask environment and virtualenv.
+- Flask and Flask-SQLAlchemy installed for environment.
+- Set up `page.html`. Purpose: Display recipes. 
+- Added 'Add recipe' feature, seems to work fine.
+
+
+TODO:
+- Prioritize 'Delete' feature first. #DONE
+- Create "Details" button for each recipes, leads to more detailed description. 
+- There should be a "show more" button, which resembles 3 dots. #DONE
+
+Day 2
+Date: Feb 1, 2025
+
+  Tasks Done:
+- Delete feature set up.
+- Main page fleshed out, including:
+    + working delete button, along with unset up 'Edit' and 'Details' buttons.
+    + "Show more" button added.
+    + Recipe listing blocks looking nice.
+- Made a .js file 'script.js' for a little feature with "Show_more" button
+
+
+TODO:
+- Add functions to "Details" button, leads to more detailed description. #DONE
+- Add functions to "Edit" button, allows users to change chosen recipe.
+
+Day 3
+Date: Feb 2, 2025
+
+  Tasks Done:
+- Working 'Details' button set up.
+- 'Details' page set up, fleshed out.:
+- 'return home' button added in 'Details' page
+
+TODO:
+- Add functionality to 'Edit' button.
+- Edit button should be adding and updating lines of descriptions to 'Description' section
+
+Day 4
+Date: Feb 3, 2025
+
+  Tasks Done:
+- 'edit' page works now. you can change recipes' name and add description. 
+- Spent too much time figuring out description feature --> Couldn't design the page well
+
+TODO:
+- Add image square for every recipe 
+- Finish 'edit' page design #Done
+
+Day 5
+Date: Feb 4, 2025
+  Tasks Done:
+- Everything else is done, I think. considering adding images. NAH, I'll move onto new projects
+- Finish up README.md
+
+

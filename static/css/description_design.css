@@ -1,0 +1,119 @@
+.recipe_listing {
+    width: 50vw;
+    height: 90vh;
+    margin-bottom: 2.4rem;
+    position: relative;
+    border-radius: 0.3rem;
+}
+
+.choice_listing {
+    border-radius: 0.3rem;
+}
+
+.content_container {
+    border-radius: 0.3rem;
+}
+
+.Recipe , .Description_sign{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    top: -4rem;
+    position: inherit;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 95%; 
+
+}
+
+.change_name [type="text"] {
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: #ffe8cc;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 80%; /* Ensures it doesn't overflow */
+    white-space: normal; /* Allows text to wrap */
+
+    border-radius: 1rem;    
+    border: 0;
+    text-align: center; 
+    width: 95%;
+    max-width: 95%; 
+    margin-bottom: 15%;
+    font-size: 2rem;
+}
+
+.return {
+    margin: 3vh 0;
+    position: absolute;
+    border-radius: 0.3rem;
+    background-color:  #f0d2a2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border: 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    left: 14.5%;
+}
+
+.return:hover, .change_name [type="submit"]:hover, .add_desc [type="submit"]:hover {
+    background-color: #a63d40; /* Tomato red */
+    color: white;
+    border-color: rgba(60, 43, 43, 0.089);
+}
+
+.return:active, .change_name [type="submit"]:active, .add_desc [type="submit"]:active {
+    background-color: #6d2e2f; /* Deep roasted red */
+    color: white;
+    border-color: black;
+}
+
+.Description_sign {
+    margin-top: -4.5%;
+}
+
+
+
+.change_name [type="submit"], .add_desc [type="submit"] {
+    font-size: 25px;
+    font-family: monospace, 'Courier New', Courier;
+    border-radius: 10px;
+    border: 1px solid #b88a44; /* Warm brown */
+    background-color: #d4a373; /* Muted orange, like baked goods */
+    color: white;
+}
+
+.change_name [type="submit"] {
+    position: absolute;
+    left: 40%;
+    top: 16.5%;
+}
+
+
+
+.add_desc [type="text"] {
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+    font-family: monospace, 'Courier New', Courier;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 20%;
+    position: relative;
+    right: 5%;
+    top: -1.3rem;
+    margin: auto;
+}
+.description {
+    margin-bottom: -15px;
+}

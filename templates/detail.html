@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for( 'static', filename='css/description_design.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="recipe_listing">
+    <p class="Recipe" name="recipe_block">{{ recipe.content }}</p>
+    <button class="content_container" >&#8226 &#8226 &#8226</button>
+    <div class="choice_listing">
+        <a class="option" href="/details/{{ recipe.content }}/{{ recipe.id }}/edit">Edit</a>
+        <a class="option" href="/delete/{{recipe.id}}">Delete</a>
+    </div>
+    <div class="Description" name="description_block">
+        <p class="Description_sign">Description</p>
+        {% if recipe.descriptions|length < 1 %}
+        <h2>No descriptions yet!</h2>
+        {% else %}
+
+        {% for desc in recipe.descriptions %}
+        <p class="description">{{ desc.desc }}</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+<button class="return">Return</button>
+
+{% endblock %}
