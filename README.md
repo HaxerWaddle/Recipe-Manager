@@ -11,11 +11,11 @@ This is a personal and learning project made by me with the help of freeCodeCamp
 ## Installation
 To set up this project on your local machine, follow these steps:
 1. Clone the repository using git: 
-    git clone https://github.com/HaxerWaddle/Recipe-Manager.git
+    `git clone https://github.com/HaxerWaddle/Recipe-Manager.git`
 
 2. Install the required dependencies:
-    cd "Recipe Manager"
-    pip install flask flask_sqlalchemy
+    `cd "Recipe Manager"`
+    `pip install flask flask_sqlalchemy`
 (Note: You may need to create a virtual environment first if you prefer to use one.)
 
 ## Usage
@@ -28,11 +28,11 @@ To set up this project on your local machine, follow these steps:
 
 ## Contributing
 - Fork the repository and create a new branch for your feature or bugfix: 
-    git checkout -b new-feature
+    `git checkout -b new-feature`
 - Make your changes and commit them:
-    git commit -am "Add new feature"
+    `git commit -am "Add new feature"`
 - Push to your fork:
-    git push origin new-feature
+    `git push origin new-feature`
 
 ## License
 
