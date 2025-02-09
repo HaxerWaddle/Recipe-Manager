@@ -117,3 +117,8 @@
 .description {
     margin-bottom: -15px;
 }
+
+.delete-btn:hover {
+    background-color: green;
+    color: black;
+}
