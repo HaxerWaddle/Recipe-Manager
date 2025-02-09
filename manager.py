@@ -11,7 +11,7 @@ class Recipe(db.Model):
     descriptions = db.relationship('Recipe_Desc', backref='recipe', lazy=True)
     def __repr__(self):
         return f'<Recipe {self.id!r}>'
-    
+        
 class Recipe_Desc(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     desc = db.Column(db.String, nullable=False)
